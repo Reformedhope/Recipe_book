@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "475eee12-ac7c-48b2-adc1-d95530da6482",
+		"name": "Recipe_Book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25812088"
+	},
+	"item": [
+		{
+			"name": "Get_recipes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get_recipe_summary",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
