@@ -1,5 +1,6 @@
 const RecipePage = (props) => {
     return (  <div>
+        {/* <Recipe/> */}
 
     </div>);
 }
