@@ -12,7 +12,7 @@ console.log("state inside of the recipe page", state)
 
 
     return (  <div>
-        {/* <RecipeList/> */}
+        <RecipeList/>
 <p> Recipes</p>
     </div>);
 }

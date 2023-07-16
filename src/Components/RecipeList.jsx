@@ -1,10 +1,12 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import axios from "axios";
+import RecipeMapper from "./RecipeMapper";
 
 
 
 
-export default function RecipeMList(){
+export default function RecipeList(){
+    const [recipes, setRecipes] =useState([]);
     async function fetchRecipes(){
         try{
             let response = await axios.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=apples,flour,sugar&number=10&ignorePantry=true&ranking=1",
@@ -14,12 +16,21 @@ export default function RecipeMList(){
                     'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
                   },
             });
+            debugger
+            // console.log(response.data)
+            setRecipes(response.data)
         }catch(error){
             console.log("error in fetching the recipes", error)
         }
     }
+    useEffect(()=>{
+        fetchRecipes()
+    },[])
 
     return(
-        <div>LIST</div>
+
+        <div>
+            <RecipeMapper recipes = {recipes}/>
+        </div>
     )
 }
