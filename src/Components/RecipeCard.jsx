@@ -6,7 +6,6 @@ export default function recipeCard({recipe}){
         <h3>{recipe.likes}Likes</h3>
         <div>{recipe.title}</div>
         <div>{recipe.title}</div>
-        <div>{recipe.title}</div>
         </div>
     )
 }
