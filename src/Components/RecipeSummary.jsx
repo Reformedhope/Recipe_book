@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 
 
 export default function RecipeSummary(){
-{
+
     
     async function fetchSummary(){
+        try{
         let response = await axios.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/4632/summary",
         {
             headers: {
@@ -13,13 +14,21 @@ export default function RecipeSummary(){
           'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
         }
     }
-)    
-    
-    
-   
-}
-}
+    );
+    debugger
+    console.log(response.data)
+    }catch(error){
+    console.log("Error fetching recipe summary:", error)
+
+
+    }
+    }
+    useEffect(()=>{
+        fetchSummary()
+
+    },[])
+
  return (  
-        <div></div>
+        <div>{response.data.summary}/div>
     );
 }
