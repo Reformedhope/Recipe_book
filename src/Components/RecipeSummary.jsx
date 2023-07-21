@@ -29,6 +29,6 @@ export default function RecipeSummary(){
     },[])
 
  return (  
-        <div>{response.data.summary}/div>
+        <div>{response.data.summary}</div>
     );
 }
