@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 
 export default function RecipeSummary(){
+    const [summary,setSummary]=useState('');
 
     
     async function fetchSummary(){
@@ -15,6 +16,7 @@ export default function RecipeSummary(){
         }
     }
     );
+    setSummary(response.data.summary)
     debugger
     console.log(response.data)
     }catch(error){
@@ -29,6 +31,10 @@ export default function RecipeSummary(){
     },[])
 
  return (  
-        <div>{response.data.summary}</div>
+        <div>
+            <h1>Summary:</h1>
+            <br/>
+            <h4>{summary}</h4>
+        </div>
     );
 }
