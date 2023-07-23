@@ -16,7 +16,8 @@ export default function RecipeSummary(){
         }
     }
     );
-    setSummary(response.data.summary)
+    const summaryString =JSON.stringify(response.data)
+    setSummary(summaryString)
     debugger
     console.log(response.data)
     }catch(error){
@@ -34,7 +35,8 @@ export default function RecipeSummary(){
         <div>
             <h1>Summary:</h1>
             <br/>
-            <h4>{summary}</h4>
+            <div dangerouslySetInnerHTML={{__html: summary}}/>
+            
         </div>
     );
 }
