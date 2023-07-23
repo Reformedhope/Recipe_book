@@ -6,9 +6,9 @@ export default function RecipeSummary(){
     const [summary,setSummary]=useState('');
 
     
-    async function fetchSummary(){
+    async function fetchSummary(recipeId){
         try{
-        let response = await axios.get("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/4632/summary",
+        let response = await axios.get(`https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${recipeId}/summary`,
         {
             headers: {
           'X-RapidAPI-Key': 'ebca4246cbmshfdb935bd9e33d2bp16cdacjsn55f3c899903a',
