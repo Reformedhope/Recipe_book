@@ -15,16 +15,28 @@ const SearchBar = (props) => {
 
     };
     
-    return ( 
-        <div>
-            <form  on onSubmit={handleRecipeSubmit}>
-                <input type = "text" place holder ="Seperate ingredients w/ a comma" value = {search}  onChange={(e) => setSearch(e.target.value)}/>
-                <button type="submit">Button</button>
-            </form>
-
+    return (
+        <div className="flex justify-center py-4">
+          <form onSubmit={handleRecipeSubmit} className="w-full max-w-lg">
+            <div className="flex items-center border rounded-lg shadow-lg">
+              <input
+                type="text"
+                placeholder="Separate ingredients w/ a comma"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="py-3 px-6 w-full rounded-l-lg focus:outline-none focus:ring focus:border-blue-500"
+              />
+              <button
+                type="submit"
+                className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-r-lg ml-2" // Add 'ml-2' class to create space between the input and the button
+              >
+                Button
+              </button>
+            </div>
+          </form>
         </div>
-
-     );
+      );
 }
  
 export default SearchBar;
+
