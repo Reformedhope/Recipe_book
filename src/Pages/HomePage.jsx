@@ -3,16 +3,21 @@ import SearchBar from '../Components/SearchBar';
 
 const HomePage = (props) => {
   return (
-    <div>
+    <body class="bg-gradient-to-br from-blue-400 to-gray-600">
+
+
+    <div >
         <div>
-            <h2> Welcome to great food ideas!</h2> 
+            <h2 className="text-4xl font-bold text-center text-dark-green-600 mb-8"> Welcome to great food ideas!</h2> 
             <div>
             </div>
             <SearchBar/>
+            
 
         </div>
       
     </div>
+    </body>
   );
 }
 
