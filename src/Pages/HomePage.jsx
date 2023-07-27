@@ -3,7 +3,7 @@ import SearchBar from '../Components/SearchBar';
 
 const HomePage = (props) => {
   return (
-    <body class="bg-gradient-to-br from-blue-400 to-gray-600">
+    // <body class="bg-gradient-to-br from-blue-400 to-gray-600">
 
 
     <div >
@@ -17,7 +17,7 @@ const HomePage = (props) => {
         </div>
       
     </div>
-    </body>
+    // </body>
   );
 }
 

@@ -11,7 +11,8 @@ const {state} = useLocation();
 console.log("state inside of the recipe page", state)
 
 
-    return (  <div>
+    return (  
+    <div>
         <RecipeList search = {state}/>
 <p> Recipes</p>
     </div>);
