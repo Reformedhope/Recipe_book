@@ -9,7 +9,7 @@ export default function RecipeList(search){
     const [recipes, setRecipes] =useState([]);
     async function fetchRecipes(){
         try{
-            let response = await axios.get(`https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=${search}&number=10&ignorePantry=true&ranking=1`,
+            let response = await axios.get(`https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=apples,flour,sugar&number=10&ignorePantry=true&ranking=1`,
             {
                 headers: {
                     'X-RapidAPI-Key': '3209788d98msh7972559b7c7ebe3p199943jsn5a92dd09c0e7',
