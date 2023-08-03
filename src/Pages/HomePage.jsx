@@ -4,7 +4,7 @@ import './HomePage.css';
 
 const HomePage = (props) => {
   return (
-    // <body class="bg-gradient-to-br from-blue-400 to-gray-600">
+    
 
 
     <div >

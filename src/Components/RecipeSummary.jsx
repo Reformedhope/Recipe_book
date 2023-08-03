@@ -5,7 +5,7 @@ import axios from "axios";
 export default function RecipeSummary(){
     const [summary,setSummary]=useState('');
 
-    
+    debugger
     async function fetchSummary(recipeId){
         try{
         let response = await axios.get(`https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${recipeId}/summary`,
@@ -16,9 +16,10 @@ export default function RecipeSummary(){
         }
     }
     );
+    
     const summaryString =JSON.stringify(response.data)
     setSummary(summaryString)
-    debugger
+    
     console.log(response.data)
     }catch(error){
     console.log("Error fetching recipe summary:", error)
@@ -35,7 +36,8 @@ export default function RecipeSummary(){
         <div>
             <h1>Summary:</h1>
             <br/>
-            <div dangerouslySetInnerHTML={{__html: summary}}/>
+            <p>{summary}</p>
+            {/* <div dangerouslySetInnerHTML={{__html: summary}}/> */}
             
         </div>
     );
