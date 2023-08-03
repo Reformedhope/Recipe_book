@@ -3,13 +3,13 @@
 @import 'tailwindcss/utilities';
 .background{
     background-image: url('../src/Assets/Cooking-Wallpapers-HD-Free-Download.jpg.crdownload');
-    background-size: cover; /* Add this property to make the image cover the entire container */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center; /* Center the image within the container */
-  min-height: 100vh; /* Set a minimum height to ensure the image covers the entire viewport height */
+    background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  min-height: 100vh; 
 }
 
-/* Add styles to ensure proper sizing and positioning of content */
+
 .container {
   padding: 20px;
 }
