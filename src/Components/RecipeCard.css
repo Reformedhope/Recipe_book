@@ -1,12 +1,18 @@
-.container-box {
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute the cards evenly in the container */
+  }
+  
+  .container-box {
+    /* Your existing styles for the card */
     border-radius: 2rem;
-    border-color: black; /* Set the border color to black */
+    border-color: black;
     border-style: groove;
     box-shadow: 2px 2px 2px 2px;
     color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 1rem;
-    margin: 0 auto;
-    max-width: 600px;
+    width: calc(50% - 1rem); /* Set the width to occupy 50% of the container width with some margin */
+    margin: 0.5rem; /* Add some margin between the cards */
     font-size: medium;
   }

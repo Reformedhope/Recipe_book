@@ -5,20 +5,19 @@ import './RecipeCard.css'
 export default function recipeCard({recipe}){
     console.log("single Recipe inside of card:", recipe)
     return(
-        <div className="container-box">
-    
-        <div className="flex">
-
-        <div >
-        <img src ={recipe.image}/>
-        </div>
-
-        <div>
+        <div class="cards-container">
+  <div className="container-box">
+    <div className="flex">
+      <div>
+        <img src={recipe.image} alt="Recipe" />
+      </div>
+      <div>
         <h1>{recipe.title}</h1>
-        <h3>{recipe.likes}Likes</h3>
-        <RecipeSummary recipeId ={recipe.id}/>
-        </div>
-        </div>
-        </div>
+        <h3>{recipe.likes} Likes</h3>
+        <RecipeSummary recipeId={recipe.id} />
+      </div>
+    </div>
+  </div>
+</div>
     )
 }
