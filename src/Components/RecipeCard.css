@@ -10,9 +10,21 @@
     border-color: black;
     border-style: groove;
     box-shadow: 2px 2px 2px 2px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1rem;
     width: calc(50% - 1rem); /* Set the width to occupy 50% of the container width with some margin */
     margin: 0.5rem; /* Add some margin between the cards */
     font-size: medium;
+    background-color: azure;
+  }
+  h1 {
+    font-size: large;
+  }
+
+  .image{
+    min-width: 200px;
+    min-height: 200px;
+  }
+  .summary{
+    min-width: 100%;
   }

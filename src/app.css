@@ -1,13 +1,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-.background{
-    background-image: url('../src/Assets/Cooking-Wallpapers-HD-Free-Download.jpg.crdownload');
+/* .background{
+    background-image: url('../src/Assets/pictures/recipe1.jpg');
     background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center; 
   min-height: 100vh; 
-}
+} */
 
 
 .container {

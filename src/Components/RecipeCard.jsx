@@ -8,13 +8,14 @@ export default function recipeCard({recipe}){
         <div class="cards-container">
   <div className="container-box">
     <div className="flex">
-      <div>
+      <div className="image">
         <img src={recipe.image} alt="Recipe" />
       </div>
       <div>
         <h1>{recipe.title}</h1>
-        <h3>{recipe.likes} Likes</h3>
+        <span className="summary">
         <RecipeSummary recipeId={recipe.id} />
+        </span>
       </div>
     </div>
   </div>

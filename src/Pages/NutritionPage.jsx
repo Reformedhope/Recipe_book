@@ -1,18 +1,18 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-const Nutrition = (props) => {
-    const [nutrients, setNutrients]=useState
-    async function() {
-        let response = await axios.get(``)
-    }
+// const Nutrition = (props) => {
+//     const [nutrients, setNutrients]=useState
+//     async function() {
+//         let response = await axios.get(``)
+//     }
 
 
-    return ( 
+//     return ( 
     
-    <div>
+//     <div>
 
-    </div>
-     );
-}
- 
-export default Nutrition;
+//     </div>
+//      );
+// }
+  
+// export default Nutrition;

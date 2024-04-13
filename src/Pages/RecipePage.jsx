@@ -2,6 +2,7 @@
 import React from "react";
 import RecipeList from "../Components/RecipeList";
 import { useLocation } from "react-router-dom";
+import SearchBar from "../Components/SearchBar";
 
 //this will now hold the value of user input. 
 
@@ -12,7 +13,8 @@ console.log("state inside of the recipe page", state)
 
 
     return (  
-    <div>
+    <div class = 'content'>
+        <SearchBar/>
         <RecipeList search = {state}/>
 <p> Recipes</p>
     </div>);
